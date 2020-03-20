@@ -15,6 +15,10 @@ class Question(models.Model):
     def published_recently(self):
         return self.published_date >= timezone.now() - datetime.timedelta(days=1)
 
+    def was_published_recently(self):
+        now = timezone.now()
+        return now - datetime.timedelta(days=1) <= self.published_date <= now
+
 
 class Choice(models.Model):
     # more info regarding field options

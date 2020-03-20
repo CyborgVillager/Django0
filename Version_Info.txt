@@ -98,7 +98,7 @@ v3 Html/CSS Poll Questions: User can now see polls questions @ url/polls
                                 Objectives: form processing/cleaning the code, will work on being mobile friendly as well.
 
 ----------------------------    ----------------------------   ------------------------- ------------------------------
---v4 Voting Form/CSS Update: updated the following filees
+v4 Voting Form/CSS Update: updated the following files
 
                             Files Changed:
                                 * Updated detail.html
@@ -110,3 +110,16 @@ v3 Html/CSS Poll Questions: User can now see polls questions @ url/polls
                             Summary: Poll App is taking form with added features & functions
 
                             Objectives: Auto-tests , make the site mobile friendly
+----------------------------    ----------------------------   ------------------------- ------------------------------
+--v5 Testing: Added testing features to test for bugs
+
+                Files Changed:
+                * models.py
+                * tests.py
+                * urls.py
+                * views.py
+
+                Summary: Will be working on improving testing for other projects, this was a quite an interesting experience
+                            working on tests. Have a couple of ideas on implementing this
+
+               Objectives: Mobile Friendly in progress, further upates on js/css -> static folder
