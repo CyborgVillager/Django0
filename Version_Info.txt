@@ -82,7 +82,7 @@ v2 DB Introduction SQLite: Modified the db to include sqlite3/site now has acces
                             Objectives:
                                 Making an interface/app for front end usage of using the polls
 ----------------------------    ----------------------------   ------------------------- ------------------------------
---v3 Html/CSS Poll Questions: User can now see polls questions @ url/polls
+v3 Html/CSS Poll Questions: User can now see polls questions @ url/polls
 
                                 Files Changed:
                                     * New folder static/polls/css & static/polls/images
@@ -96,3 +96,17 @@ v2 DB Introduction SQLite: Modified the db to include sqlite3/site now has acces
                                     Quick update to the site, front end
 
                                 Objectives: form processing/cleaning the code, will work on being mobile friendly as well.
+
+----------------------------    ----------------------------   ------------------------- ------------------------------
+--v4 Voting Form/CSS Update: updated the following filees
+
+                            Files Changed:
+                                * Updated detail.html
+                                * Updated styles0.css to include button style
+                                * Updated urls.py
+                                * Updated views.py -> deleted & reformed the file/compress data
+                                * New file added results.html once the poll has been voted/be redirected to that page
+
+                            Summary: Poll App is taking form with added features & functions
+
+                            Objectives: Auto-tests , make the site mobile friendly

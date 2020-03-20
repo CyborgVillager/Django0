@@ -5,12 +5,48 @@ h1{
 
 }
 
+h4{
+    font-weight: bold;
+    font-size: 120%;
+}
+
 body{
     background-color: whitesmoke;
 }
 
 li{
     padding: 5px;
+}
+/* Button Style */
+.button {
+  padding: 5px 15px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+/* Button Hover */
+.button:hover {
+    background-color: #3e8e41;
+    font-size: 20px;
+
+}
+
+/* button clicked */
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+}
+/* Hides the Button Outline */
+:focus {
+outline: 0;
 }
 
 /* Full CSS Code -> https://github.com/CyborgVillager/Front-End-Web/blob/master/Basic_Info/CSS/css/style9.css */
