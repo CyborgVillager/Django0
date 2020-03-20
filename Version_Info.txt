@@ -24,7 +24,7 @@ v0 Django Respo Created: Respo created, Django Project
                             * Basic Intro to Django/build upon previous builds/improve concepts & modularity for
                             sites & future projects
 
---v1 Basic Intro: will be working on basic info such as polls. Once that is done will be working on a more full stack dev
+v1 Basic Intro: will be working on basic info such as polls. Once that is done will be working on a more full stack dev
                     of a site. Will include on any changes to come
 
                     Files Changed:
@@ -45,5 +45,41 @@ v0 Django Respo Created: Respo created, Django Project
                     Objectives:
                         Will begin on working on a db, a vital important factor for a full stack site dev. If your planning
                         on making your site as effective as possible.
+----------------------------    ----------------------------   ------------------------- ------------------------------
+
+--v2 DB Introduction SQLite: Modified the db to include sqlite3/site now has access to information to allow the admin
+                            to view/edit questions for the poll.
+
+                            Files Changed:
+                                * Time Zone changed
+                                    - Changed time zone @ Django0 to America/Chicago
+                                * Django0 Settings updated the comments @ INSTALLED_APPS for more information & inputed
+                                    polls.apps.PollsConfig
+                                * Migrated the DB -> python manage,.py migrate
+                                * polls/models.py
+                                    - Added/updated the file in regarding to the poll questions/published date
+                                    - Also included info regarding on where to get more data on making/configing them
+                                * Updated the migrations for the polls -> python manage.py makemigrations polls
+                                    - Ensure the migration is a success
+                                * Makes the migration auto ->python manage.py sqlmigrate polls 0001 <-(Check the version @ migrations/####_initial.py)
+                                * To create the modules onto the db -> python manage.py migrate
+                                * Making an admin AKA superuser -> python manage.py createsuperuser
+                                    - admin
+                                    - admin@email.com
+                                    - password
+                                * Ensure the site is running, if not -> python manage.py runserver
+                                    -> After clicking onto the link type /admin after your site url
+                                    -> login
+                                    -> Now have access to the admin side of the site for polls
+                                * polls/admin.py
+                                    - Import the questions to see it on the site, made a try/except for the import & prints
+                                        out a success if its able to import the question
+
+                            Summary:
+                                Site now has a functional DB, admin/access to the questions
+
+
+                            Objectives:
+                                Making an interface/app for front end usage of using the polls
 
 

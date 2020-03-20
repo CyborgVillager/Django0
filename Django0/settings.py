@@ -31,11 +31,26 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # Installed polls info
+    'polls.apps.PollsConfig',
+    # Admin side/access of the site, will modify for
+    # various degrees of access, users, mods,admin,etc,etc
+    # https://docs.djangoproject.com/en/3.0/ref/contrib/admin/#module-django.contrib.admin
     'django.contrib.admin',
+    # authentication sys , will improve the concept
+    # https://docs.djangoproject.com/en/3.0/topics/auth/#module-django.contrib.auth
     'django.contrib.auth',
+    # framework -> tracks all models that are installed onto the dhjango project
+    # https://docs.djangoproject.com/en/3.0/ref/contrib/contenttypes/#module-django.contrib.contenttypes
     'django.contrib.contenttypes',
+    # session 4 the framework
+    # https://docs.djangoproject.com/en/3.0/topics/http/sessions/#module-django.contrib.sessions
     'django.contrib.sessions',
+    # messaging framework -> flash msg
+    # https://docs.djangoproject.com/en/3.0/ref/contrib/messages/#module-django.contrib.messages
     'django.contrib.messages',
+    # static files
+    # https://docs.djangoproject.com/en/3.0/ref/contrib/staticfiles/#module-django.contrib.staticfiles
     'django.contrib.staticfiles',
 ]
 
@@ -105,8 +120,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
+#time zone
+TIME_ZONE = 'America/Chicago'
 
 USE_I18N = True
 
