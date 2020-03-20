@@ -13,7 +13,7 @@
                | Description: v# description |
                | --------------------------- |
 ----------------------------    ----------------------------   ------------------------- ------------------------------
---v0 Django Respo Created: Respo created, Django Project
+v0 Django Respo Created: Respo created, Django Project
 
                             Files Changed:
                             * Installation of Django & its components
@@ -23,3 +23,27 @@
                             Objectives:
                             * Basic Intro to Django/build upon previous builds/improve concepts & modularity for
                             sites & future projects
+
+--v1 Basic Intro: will be working on basic info such as polls. Once that is done will be working on a more full stack dev
+                    of a site. Will include on any changes to come
+
+                    Files Changed:
+                    Terminal functions -> python manage.py startapp polls
+                        * new file polls/views.py
+                            - imported HttpResponse, and made a function to return a statement once the user was on the file
+                        * Updated polls/urls.py
+                            - Try/except statement on importing views.py
+                            - connected it via urlpatterns
+                        * Django0/urls.py updated config (which allows the user to access the /polls tab
+                            - just updated django.urls from -> from django.urls import path to from django.urls import include, path
+                            - added the path to polls.urls @ urlpatterns -> path('polls/', include('polls.urls')),
+
+                    Summary:
+                        Once the site starts up and open up the link you can add polls/ @ the url to visit the polls/views.py info
+                    which will print the 'Hello this is the poll index' response.
+
+                    Objectives:
+                        Will begin on working on a db, a vital important factor for a full stack site dev. If your planning
+                        on making your site as effective as possible.
+
+
