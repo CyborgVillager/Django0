@@ -47,7 +47,7 @@ v1 Basic Intro: will be working on basic info such as polls. Once that is done w
                         on making your site as effective as possible.
 ----------------------------    ----------------------------   ------------------------- ------------------------------
 
---v2 DB Introduction SQLite: Modified the db to include sqlite3/site now has access to information to allow the admin
+v2 DB Introduction SQLite: Modified the db to include sqlite3/site now has access to information to allow the admin
                             to view/edit questions for the poll.
 
                             Files Changed:
@@ -81,5 +81,18 @@ v1 Basic Intro: will be working on basic info such as polls. Once that is done w
 
                             Objectives:
                                 Making an interface/app for front end usage of using the polls
+----------------------------    ----------------------------   ------------------------- ------------------------------
+--v3 Html/CSS Poll Questions: User can now see polls questions @ url/polls
 
+                                Files Changed:
+                                    * New folder static/polls/css & static/polls/images
+                                        - CSS -> style0.css
+                                    * New folder template/polls/detail.html & index.html
+                                    * Modified polls/urls.py to specify polls, include paths for the questions
+                                    * Updated polls/views.py functions -> 404 Error Code
+                                    * Added new poll questions / css implantation for index.html & detail.html
 
+                                Summary:
+                                    Quick update to the site, front end
+
+                                Objectives: form processing/cleaning the code, will work on being mobile friendly as well.

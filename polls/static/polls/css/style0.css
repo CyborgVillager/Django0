@@ -1,0 +1,37 @@
+h1{
+  text-align: center;
+  font-weight: bold;
+  color: green;
+
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+li{
+    padding: 5px;
+}
+
+/* Full CSS Code -> https://github.com/CyborgVillager/Front-End-Web/blob/master/Basic_Info/CSS/css/style9.css */
+/* User link click/hover */
+/* Link color blue */
+a:link{
+    color:blue;
+    }
+
+/* Tells user via color code that they already visited the link */
+a:visited{
+    color: black;
+}
+/* When user is hovering over the link/underline & changes size */
+a:hover{
+    color: mediumvioletred;
+    text-decoration: underline;
+    font-size: 120%;
+}
+/* When user clicks on it turns aquad to signify they clicked on it */
+a:active{
+    color: darkblue;
+}
+
