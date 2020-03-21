@@ -111,7 +111,7 @@ v4 Voting Form/CSS Update: updated the following files
 
                             Objectives: Auto-tests , make the site mobile friendly
 ----------------------------    ----------------------------   ------------------------- ------------------------------
---v5 Testing: Added testing features to test for bugs
+v5 Testing: Added testing features to test for bugs
 
                 Files Changed:
                 * models.py
@@ -123,3 +123,19 @@ v4 Voting Form/CSS Update: updated the following files
                             working on tests. Have a couple of ideas on implementing this
 
                Objectives: Mobile Friendly in progress, further upates on js/css -> static folder
+
+
+--v6 Nav Feature: Added Nav bar to nav - between pages of index   . Modified Django0/urls. Once the site comes online
+                    It will redirect to the 'index' instead of showing an error or requiring to have the /poll tab on
+                    to function properly .
+
+                Files Changed:
+                * detail.html
+                * index.html
+                * results.html
+                * views.py
+                * urls.py
+
+                Summary: Fixed index issue, mobile friendly activated, add nav bar
+
+                Objectives: Modify the admin form.
