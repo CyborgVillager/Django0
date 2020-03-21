@@ -125,7 +125,7 @@ v5 Testing: Added testing features to test for bugs
                Objectives: Mobile Friendly in progress, further upates on js/css -> static folder
 
 
---v6 Nav Feature: Added Nav bar to nav - between pages of index   . Modified Django0/urls. Once the site comes online
+v6 Nav Feature: Added Nav bar to nav - between pages of index   . Modified Django0/urls. Once the site comes online
                     It will redirect to the 'index' instead of showing an error or requiring to have the /poll tab on
                     to function properly .
 
@@ -139,3 +139,37 @@ v5 Testing: Added testing features to test for bugs
                 Summary: Fixed index issue, mobile friendly activated, add nav bar
 
                 Objectives: Modify the admin form.
+----------------------------    ----------------------------   ------------------------- ------------------------------
+--v7 Admin Page Modification & Front End Info: modified admin to allow options of choices/ more data to help
+                                                the admin make decisions on poll w/date/info/ check if it was published recently
+
+
+                                               Files Changed:
+                                                * polls/admin.py
+                                                    - added info to help admin's functionality on the site
+                                                * polls/models.py
+                                                    - helps admin end on seeing the published date/recent
+                                                * detail.html
+                                                    -> added classes to be used @ style0.css
+                                                        - class="options"
+                                                        - class="voted"
+                                                * index.html
+                                                * results.html
+                                                    -> Added classes to be used @ style0.css
+                                                        - class="results"
+                                                        - class="votetext"
+                                                        - class="voteoption"
+                                                * style0.css
+                                                    - .options
+                                                    - .voted
+                                                    - .votetext
+                                                    - .voteoption
+                                                    - .results
+
+                                 Summary: Improved Site functionality on both front/backend, admins now have more info
+                                            to help them on improving the poll's experience for the user
+
+                                            User now have data to see on the # of votes for x,y,z choices
+                                            Visual Aid to assist user
+
+                                 Objectives: Respo completed, will be working on a mini proj as a reference point.

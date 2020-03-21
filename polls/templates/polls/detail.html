@@ -18,11 +18,13 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="/">Home</a></li>
+      <li class="active"><a href="../../admin">Admin</a></li>
     </ul>
   </div>
 </nav>
 <h1>{{ question.question_text }}</h1>
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+<div class="options">
 
 <form action="{%  url 'polls:vote' question.id %}" method="post">
 {% csrf_token %}
@@ -31,13 +33,16 @@
     <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label>
 <br>
     {% endfor %}
+
+
 <input class='button' type="submit" value="Vote!">
 </form>
+</div>
 
 
-<ul>
+<ul class="voted">
 {% for choice in question.choice_set.all %}
-    <li>{{ choice.choice_text }}</li>
+    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
 {% endfor %}
 </ul>
 

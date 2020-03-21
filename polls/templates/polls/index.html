@@ -21,6 +21,7 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="/">Home</a></li>
+      <li class="active"><a href="admin/">Admin</a></li>
     </ul>
   </div>
 </nav>
@@ -28,6 +29,7 @@
 <h1>Poll Questions</h1>
 <hr/>
 <!-- Acquire DB info for questions Start -->
+
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}

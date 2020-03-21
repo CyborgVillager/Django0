@@ -14,6 +14,38 @@ body{
     background-color: whitesmoke;
 }
 
+/* options for votes */
+.options{
+   text-align: center;
+   padding: 30px;
+}
+
+/* detail.html, shows the user what has been voted with the # count */
+.voted{
+    font-size: 120%;
+    color: blue;
+}
+
+/* padding @ results.html for Vote Again */
+.votetext{
+     padding: 0px 0px 0px 10px;
+}
+
+/* padding @ results.html for Yes or No option */
+.voteoption{
+     padding: 0px 0px 0px 5px;
+
+}
+
+/* results.html vote results */
+.results{
+    text-align: center;
+     padding: 30px;
+     font-size: 120%;
+    color: blue;
+
+}
+
 li{
     padding: 5px;
 }
